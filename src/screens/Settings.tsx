@@ -4,7 +4,7 @@ import { Header } from '../components/layout/Header';
 import { Card } from '../components/ui/Card';
 import { ChevronRight, Bell, Shield, HelpCircle, Info } from 'lucide-react';
 
-export function Settings({ navigate }: { navigate: (s: Screen) => void }) {
+export function Settings({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const settingsItems = [
     { icon: Bell, label: 'Push Notifications' },
     { icon: Shield, label: 'Privacy & Security' },
@@ -38,7 +38,7 @@ export function Settings({ navigate }: { navigate: (s: Screen) => void }) {
         </div>
 
         <div className="text-center text-xs text-gray-400 font-medium">
-          <p>Chennai Corporation Ward App</p>
+          <p>Chennai Saidapet Ward App</p>
           <p>Version 1.0.0</p>
         </div>
       </div>

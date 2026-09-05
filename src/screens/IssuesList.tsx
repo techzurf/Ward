@@ -7,7 +7,7 @@ import { Button } from '../components/ui/Button';
 import { Plus, Filter, MapPin } from 'lucide-react';
 import { cn } from '../utils';
 
-export function IssuesList({ navigate }: { navigate: (s: Screen) => void }) {
+export function IssuesList({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const [activeCategory, setActiveCategory] = useState<IssueCategory | 'All'>('All');
   const categories: (IssueCategory | 'All')[] = ['All', 'Roads', 'Street Lights', 'Drainage', 'Garbage', 'Water', 'Traffic', 'Public Facilities', 'Other'];
 

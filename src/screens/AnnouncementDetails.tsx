@@ -7,7 +7,7 @@ import { Button } from '../components/ui/Button';
 import { Share2, Calendar, Megaphone } from 'lucide-react';
 import { cn } from '../utils';
 
-export function AnnouncementDetails({ navigate, params }: { navigate: (s: Screen) => void, params?: any }) {
+export function AnnouncementDetails({ navigate, params }: { navigate: (s: Screen, params?: any) => void, params?: any }) {
   const ann = announcements.find(a => a.id === params?.id) || announcements[0];
 
   return (

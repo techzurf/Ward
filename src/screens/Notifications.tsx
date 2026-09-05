@@ -6,7 +6,7 @@ import { Card } from '../components/ui/Card';
 import { AlertCircle, Megaphone, Calendar as CalendarIcon, Info } from 'lucide-react';
 import { cn } from '../utils';
 
-export function Notifications({ navigate }: { navigate: (s: Screen) => void }) {
+export function Notifications({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const getIcon = (category: string) => {
     switch (category) {
       case 'issue': return <AlertCircle size={20} className="text-white" />;

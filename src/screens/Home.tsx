@@ -3,9 +3,9 @@ import { Screen } from '../types';
 import { Header } from '../components/layout/Header';
 import { currentUser, currentCouncillor, wardInfo, announcements, activities } from '../data';
 import { Card, Badge } from '../components/ui/Card';
-import { Phone, MessageCircle, AlertTriangle, Info, Bell, ChevronRight, CheckCircle2, Users } from 'lucide-react';
+import { Phone, MessageCircle, AlertTriangle, Info, Bell, ChevronRight, CheckCircle2, Users, Heart } from 'lucide-react';
 
-export function Home({ navigate }: { navigate: (s: Screen) => void }) {
+export function Home({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   return (
     <div className="flex-1 overflow-y-auto pb-20">
       <div className="bg-[#000000] text-white px-5 pt-8 pb-6 border-b-8 border-black relative z-10 shadow-lg">
@@ -82,13 +82,13 @@ export function Home({ navigate }: { navigate: (s: Screen) => void }) {
             </button>
 
             <button 
-              onClick={() => navigate('Language')}
+              onClick={() => navigate('Donate')}
               className="flex flex-col items-center gap-1.5"
             >
               <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-md border-2 border-black">
-                <MessageCircle className="text-black" size={20} />
+                <Heart className="text-black" size={20} />
               </div>
-              <span className="text-[9px] text-center font-bold uppercase tracking-widest text-black">Tamil</span>
+              <span className="text-[9px] text-center font-bold uppercase tracking-widest text-black">Donate</span>
             </button>
           </div>
 

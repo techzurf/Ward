@@ -5,7 +5,7 @@ import { developmentWorks } from '../data';
 import { Card, Badge } from '../components/ui/Card';
 import { MapPin, Calendar, CheckCircle2, Clock, PlayCircle } from 'lucide-react';
 
-export function DevelopmentWorks({ navigate }: { navigate: (s: Screen) => void }) {
+export function DevelopmentWorks({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   
   const getStatusIcon = (status: string) => {
     switch(status) {

@@ -5,7 +5,7 @@ import { activities } from '../data';
 import { Card, Badge } from '../components/ui/Card';
 import { Calendar, Clock, MapPin } from 'lucide-react';
 
-export function ActivitiesList({ navigate }: { navigate: (s: Screen) => void }) {
+export function ActivitiesList({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   return (
     <div className="flex-1 bg-[#E5E5E5] pb-20 flex flex-col h-full">
       <Header title="Ward Activities" />

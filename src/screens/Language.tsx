@@ -5,7 +5,7 @@ import { Card } from '../components/ui/Card';
 import { CheckCircle2 } from 'lucide-react';
 import { cn } from '../utils';
 
-export function Language({ navigate, language }: { navigate: (s: Screen) => void, language: string }) {
+export function Language({ navigate, language }: { navigate: (s: Screen, params?: any) => void, language: string }) {
   const [selectedLang, setSelectedLang] = useState(language);
 
   const handleSelect = (lang: string) => {

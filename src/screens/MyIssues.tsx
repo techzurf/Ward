@@ -6,7 +6,7 @@ import { Card, Badge } from '../components/ui/Card';
 import { MapPin } from 'lucide-react';
 import { cn } from '../utils';
 
-export function MyIssues({ navigate }: { navigate: (s: Screen) => void }) {
+export function MyIssues({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const myIssues = issues.filter(i => i.reporterId === currentUser.id);
 
   const getStatusColor = (status: string) => {

@@ -6,7 +6,7 @@ import { Card, Badge } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Phone, MessageCircle, MapPin, Clock, Calendar } from 'lucide-react';
 
-export function CouncillorProfile({ navigate }: { navigate: (s: Screen) => void }) {
+export function CouncillorProfile({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   return (
     <div className="flex-1 bg-[#E5E5E5] pb-20">
       <Header title="Ward Councillor" showBack onBack={() => navigate('WardOverview')} />

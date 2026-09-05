@@ -23,7 +23,8 @@ export type Screen =
   | 'MembershipForm'
   | 'MembershipSuccess'
   | 'MyMembership'
-  | 'MembershipCard';
+  | 'MembershipCard'
+  | 'Donate';
 
 export interface AppState {
   currentScreen: Screen;

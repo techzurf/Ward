@@ -5,7 +5,7 @@ import { areas } from '../data';
 import { Card, Badge } from '../components/ui/Card';
 import { Search, MapPin, AlertCircle } from 'lucide-react';
 
-export function AreasList({ navigate }: { navigate: (s: Screen) => void }) {
+export function AreasList({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   return (
     <div className="flex-1 bg-[#E5E5E5] pb-20 flex flex-col h-full">
       <Header title="Areas & Streets" showBack onBack={() => navigate('WardOverview')} />

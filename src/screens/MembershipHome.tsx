@@ -6,7 +6,7 @@ import { Card } from '../components/ui/Card';
 import { ShieldCheck, Users, TrendingUp, CheckCircle2 } from 'lucide-react';
 import { currentMembership } from '../data';
 
-export function MembershipHome({ navigate }: { navigate: (s: Screen) => void }) {
+export function MembershipHome({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   // If already applied/approved, skip to MyMembership or allow viewing status
   // For prototype, we'll just allow them to apply again or see their status via Profile.
 

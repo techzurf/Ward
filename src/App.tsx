@@ -31,6 +31,7 @@ import { MembershipForm } from './screens/MembershipForm';
 import { MembershipSuccess } from './screens/MembershipSuccess';
 import { MyMembership } from './screens/MyMembership';
 import { MembershipCard } from './screens/MembershipCard';
+import { Donate } from './screens/Donate';
 import { AnimatePresence, motion } from 'motion/react';
 
 export default function App() {
@@ -72,6 +73,7 @@ export default function App() {
       case 'MembershipSuccess': return <MembershipSuccess {...props} />;
       case 'MyMembership': return <MyMembership {...props} />;
       case 'MembershipCard': return <MembershipCard {...props} />;
+      case 'Donate': return <Donate {...props} />;
       default: return <Home {...props} />;
     }
   };

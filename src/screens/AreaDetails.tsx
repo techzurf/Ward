@@ -6,7 +6,7 @@ import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { MapPin, Users, AlertTriangle, Building } from 'lucide-react';
 
-export function AreaDetails({ navigate, params }: { navigate: (s: Screen) => void, params?: any }) {
+export function AreaDetails({ navigate, params }: { navigate: (s: Screen, params?: any) => void, params?: any }) {
   const area = areas.find(a => a.id === params?.id) || areas[0];
 
   return (

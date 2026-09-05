@@ -6,7 +6,7 @@ import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Map, Users, Home as HomeIcon, MapPin, Navigation } from 'lucide-react';
 
-export function WardOverview({ navigate }: { navigate: (s: Screen) => void }) {
+export function WardOverview({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   return (
     <div className="flex-1 bg-[#E5E5E5] pb-20">
       <Header title="Ward Overview" />

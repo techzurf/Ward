@@ -5,7 +5,7 @@ import { Button } from '../components/ui/Button';
 import { Camera, ChevronRight, Check } from 'lucide-react';
 import { cn } from '../utils';
 
-export function MembershipForm({ navigate }: { navigate: (s: Screen) => void }) {
+export function MembershipForm({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const [step, setStep] = useState(1);
   const [agreed, setAgreed] = useState(false);
   const [membershipType, setMembershipType] = useState<MembershipType>('General Member');

@@ -4,7 +4,7 @@ import { Button } from '../components/ui/Button';
 import { CheckCircle2, FileText, Home } from 'lucide-react';
 import { motion } from 'motion/react';
 
-export function MembershipSuccess({ navigate }: { navigate: (s: Screen) => void }) {
+export function MembershipSuccess({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const appId = `APP-2026-${Math.floor(Math.random() * 10000).toString().padStart(4, '0')}`;
   
   return (

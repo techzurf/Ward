@@ -5,7 +5,7 @@ import { currentUser } from '../data';
 import { Card } from '../components/ui/Card';
 import { ChevronRight, FileText, Bell, Globe, Settings as SettingsIcon, LogOut, Calendar, Users } from 'lucide-react';
 
-export function Profile({ navigate }: { navigate: (s: Screen) => void }) {
+export function Profile({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const menuItems = [
     { icon: Users, label: 'My Membership', screen: 'MyMembership' as Screen },
     { icon: FileText, label: 'My Reported Issues', screen: 'MyIssues' as Screen },

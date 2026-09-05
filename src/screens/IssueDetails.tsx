@@ -7,7 +7,7 @@ import { Button } from '../components/ui/Button';
 import { MapPin, Calendar, CheckCircle2, Clock, PlayCircle, Share2, Phone } from 'lucide-react';
 import { cn } from '../utils';
 
-export function IssueDetails({ navigate, params }: { navigate: (s: Screen) => void, params?: any }) {
+export function IssueDetails({ navigate, params }: { navigate: (s: Screen, params?: any) => void, params?: any }) {
   const issue = issues.find(i => i.id === params?.id) || issues[0];
 
   const getStatusColor = (status: string) => {

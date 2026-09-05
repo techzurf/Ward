@@ -6,7 +6,7 @@ import { currentMembership } from '../data';
 import { Download, Share2, ShieldCheck, QrCode } from 'lucide-react';
 import { motion } from 'motion/react';
 
-export function MembershipCard({ navigate }: { navigate: (s: Screen) => void }) {
+export function MembershipCard({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   if (!currentMembership) {
     return null;
   }
@@ -32,7 +32,7 @@ export function MembershipCard({ navigate }: { navigate: (s: Screen) => void }) 
             <div className="w-10 h-10 bg-[#FFD400] rounded-full mx-auto mb-2 border-2 border-black flex items-center justify-center shadow-[2px_2px_0_rgba(0,0,0,1)]">
               <ShieldCheck size={20} className="text-black" />
             </div>
-            <h2 className="text-white font-bold text-[15px] uppercase tracking-widest leading-tight">Chennai Ward<br/>Organization</h2>
+            <h2 className="text-white font-bold text-[15px] uppercase tracking-widest leading-tight">Chennai Saidapet<br/>Ward Org.</h2>
           </div>
 
           {/* Card Body */}

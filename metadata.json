@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "Chennai Saidapet Ward",
+  "description": "Civic engagement platform for Chennai Saidapet Ward",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

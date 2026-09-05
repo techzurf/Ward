@@ -1,12 +1,13 @@
 import React from 'react';
 import { Screen } from '../types';
 import { Header } from '../components/layout/Header';
+import { cn } from "../utils";
 import { activities } from '../data';
 import { Card, Badge } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { MapPin, Calendar, Clock, Share2 } from 'lucide-react';
 
-export function ActivityDetails({ navigate, params }: { navigate: (s: Screen) => void, params?: any }) {
+export function ActivityDetails({ navigate, params }: { navigate: (s: Screen, params?: any) => void, params?: any }) {
   const act = activities.find(a => a.id === params?.id) || activities[0];
 
   return (

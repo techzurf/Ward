@@ -7,7 +7,7 @@ import { ShieldCheck, User, Calendar, MapPin, Phone, CreditCard } from 'lucide-r
 import { currentMembership } from '../data';
 import { cn } from '../utils';
 
-export function MyMembership({ navigate }: { navigate: (s: Screen) => void }) {
+export function MyMembership({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   if (!currentMembership) {
     return (
       <div className="flex-1 bg-[#E5E5E5] flex flex-col h-full">

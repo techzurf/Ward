@@ -7,7 +7,7 @@ export const currentUser: User = {
   ward: 'Ward 112',
   area: 'Teynampet',
   street: 'Poes Garden 1st Street',
-  imageUrl: 'https://i.pravatar.cc/150?u=karthik'
+  imageUrl: 'https://res.cloudinary.com/dv16a8l1l/image/upload/v1788424427/ChatGPT_Image_Sep_3_2026_02_03_33_PM_yjchfs.png'
 };
 
 export const currentMembership: MembershipDetails | null = {
@@ -21,7 +21,7 @@ export const currentMembership: MembershipDetails | null = {
   status: 'Approved',
   joiningDate: '2026-08-10',
   submissionDate: '2026-08-01',
-  profilePhoto: 'https://i.pravatar.cc/150?u=karthik'
+  profilePhoto: 'https://res.cloudinary.com/dv16a8l1l/image/upload/v1788424427/ChatGPT_Image_Sep_3_2026_02_03_33_PM_yjchfs.png'
 };
 
 export const currentCouncillor: Councillor = {
@@ -35,7 +35,7 @@ export const currentCouncillor: Councillor = {
   whatsapp: '+91 98400XXXXX',
   officeLocation: 'Ward 112 Office, Eldams Road, Teynampet, Chennai 600018',
   officeHours: 'Mon - Sat: 9:00 AM - 1:00 PM',
-  imageUrl: 'https://i.pravatar.cc/150?img=47'
+  imageUrl: 'https://res.cloudinary.com/dv16a8l1l/image/upload/v1788424383/ChatGPT_Image_Sep_3_2026_02_02_22_PM_wfatka.png'
 };
 
 export const wardInfo = {

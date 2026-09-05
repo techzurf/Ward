@@ -3,7 +3,7 @@ import { Screen } from '../types';
 import { motion } from 'motion/react';
 import { Building2 } from 'lucide-react';
 
-export function Splash({ navigate }: { navigate: (s: Screen) => void }) {
+export function Splash({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate('Welcome');
@@ -25,8 +25,8 @@ export function Splash({ navigate }: { navigate: (s: Screen) => void }) {
         <div className="w-28 h-28 bg-[#D71920] rounded-2xl flex items-center justify-center mb-6 border-4 border-white shadow-[8px_8px_0_rgba(255,212,0,1)]">
           <Building2 size={56} className="text-white" />
         </div>
-        <h1 className="text-4xl font-bold text-white mb-2 uppercase tracking-widest text-center">
-          Chennai<br/><span className="text-[#FFD400]">Ward</span>
+        <h1 className="text-4xl font-bold text-white mb-2 uppercase tracking-widest text-center leading-tight">
+          Chennai Saidapet<br/><span className="text-[#FFD400]">Ward</span>
         </h1>
         <p className="text-[#FFFFFF] text-sm uppercase tracking-widest font-bold">
           Civic Engagement Platform

@@ -6,7 +6,7 @@ import { Button } from '../components/ui/Button';
 import { Camera, MapPin, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-export function ReportIssue({ navigate }: { navigate: (s: Screen) => void }) {
+export function ReportIssue({ navigate }: { navigate: (s: Screen, params?: any) => void }) {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const categories: IssueCategory[] = ['Roads', 'Street Lights', 'Drainage', 'Garbage', 'Water', 'Traffic', 'Public Facilities', 'Other'];
   
